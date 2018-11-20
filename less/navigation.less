@@ -4,20 +4,30 @@ nav {
   left: 2%;
 
   .nav__link {
-    opacity: .5;
+    opacity: 1;
 
     border-left: 2.5px solid #E7DFDD;
     padding-left: 7px;
     margin-bottom: 10px;
 
     font-size: 1.8rem;
+    height: 25px;
 
     a {
       text-decoration: none;
       color: #E7DFDD;
+      opacity: 0;
     }
 
     &:hover {
+      opacity: 1;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .active_hover {
       opacity: 1;
     }
   }

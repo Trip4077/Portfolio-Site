@@ -141,6 +141,7 @@ html {
   color: #E7DFDD;
   font-family: 'Roboto Mono', monospace, sans-serif;
   height: 100%;
+  scroll-behavior: smooth;
 }
 html body {
   box-sizing: border-box;
@@ -160,17 +161,25 @@ nav {
   left: 2%;
 }
 nav .nav__link {
-  opacity: 0.5;
+  opacity: 1;
   border-left: 2.5px solid #E7DFDD;
   padding-left: 7px;
   margin-bottom: 10px;
   font-size: 1.8rem;
+  height: 25px;
 }
 nav .nav__link a {
   text-decoration: none;
   color: #E7DFDD;
+  opacity: 0;
 }
 nav .nav__link:hover {
+  opacity: 1;
+}
+nav .nav__link .active {
+  opacity: 1;
+}
+nav .nav__link .active_hover {
   opacity: 1;
 }
 i {
