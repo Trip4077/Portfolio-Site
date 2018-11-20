@@ -231,13 +231,14 @@ i:hover {
   justify-content: center;
 }
 .skills .skills__title {
-  margin: 50px 0;
+  margin-top: 100px;
+  margin-bottom: 75px;
 }
 .skills .skills__row {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
   width: 60%;
   min-width: 600px;
   margin: 20px 0;
@@ -279,6 +280,11 @@ i:hover {
 .skills .skills__row .back-end img:first-child {
   width: 150px;
 }
+#less {
+  height: 100px;
+  align-self: center;
+  border-radius: 10px;
+}
 .projects {
   width: 100%;
   min-height: 100vh;
@@ -290,7 +296,7 @@ i:hover {
 }
 .projects .projects__container {
   padding: 50px;
-  width: 60%;
+  width: 70%;
   height: 90%;
   margin: auto 0;
   display: flex;
@@ -300,6 +306,7 @@ i:hover {
 }
 .projects .projects__container h1 {
   margin: 30px 0;
+  margin-bottom: 75px;
 }
 .projects .projects__container div {
   display: flex;
@@ -309,19 +316,62 @@ i:hover {
 }
 .projects .projects__container div .projects__container__tile {
   border: 2px solid #B82601;
-  width: 30%;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 40%;
   margin: 12px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding-bottom: 25px;
   text-align: center;
-  height: 200px;
 }
 .projects .projects__container div .projects__container__tile h2 {
   background-color: #B82601;
   padding: 10px 0;
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   width: 100%;
   margin: 0;
+}
+.certs {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  background-image: linear-gradient(to top right, #062F4F, #121212);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.certs .certs__columns {
+  display: flex;
+}
+.certs h1 {
+  margin-bottom: 75px;
+}
+.certs__column__tile {
+  border: 2px solid #B82601;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+.certs__column__tile h3 {
+  font-size: 2.6rem;
+  background-color: #B82601;
+  padding: 10px;
+  width: 100%;
+}
+.certs__column__tile img {
+  height: 350px;
+  width: 600px;
+  margin: 0 10px;
+  margin-top: 25px;
+}
+.certs__column__tile img:last-child {
+  margin-bottom: 10px;
+}
+.certs__columns__left,
+.certs__columns__right {
+  margin: 0 25px;
 }
