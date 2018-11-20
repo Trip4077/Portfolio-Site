@@ -83,7 +83,7 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
+  margin: auto;
   padding: 0;
   border: 0;
   outline: 0;
@@ -140,11 +140,13 @@ html {
   font-size: 62.5%;
   color: #E7DFDD;
   font-family: 'Roboto Mono', monospace, sans-serif;
+  height: 100%;
 }
 html body {
   box-sizing: border-box;
   font-size: 1.6rem;
   line-height: 24px;
+  height: 100%;
 }
 html body h1 {
   font-size: 6.8rem;
@@ -192,7 +194,7 @@ i:hover {
 .welcome {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #813772, black);
+  background-image: linear-gradient(to bottom right, #813772, #121212);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,6 +206,7 @@ i:hover {
   align-items: center;
   justify-content: space-around;
   height: 40%;
+  margin-top: 150px;
 }
 .welcome .welcome__intro .welcome__intro__icons {
   display: flex;
@@ -218,10 +221,68 @@ i:hover {
 #youtube {
   width: 65px;
 }
+.skills {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top right, #062F4F, #121212);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills .skills__title {
+  margin: 50px 0;
+}
+.skills .skills__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 60%;
+  min-width: 600px;
+  margin: 20px 0;
+  text-align: center;
+}
+.skills .skills__row .skills__row__category {
+  font-size: 4rem;
+  font-weight: bolder;
+  background-color: #B82601;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.skills .skills__row .skills__row__items {
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skills .skills__row .skills__row__items img {
+  height: 125px;
+  width: 140px;
+  margin: 0 8px;
+}
+.skills .skills__row .skills__row__items img:nth-child(5) {
+  width: 100px;
+}
+.skills .skills__row .back-end {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skills .skills__row .back-end img {
+  width: 100px;
+}
+.skills .skills__row .back-end img:first-child {
+  width: 150px;
+}
 .projects {
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to bottom right, #813772, black);
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #813772, #121212);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,6 +297,9 @@ i:hover {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+}
+.projects .projects__container h1 {
+  margin: 30px 0;
 }
 .projects .projects__container div {
   display: flex;
@@ -259,4 +323,5 @@ i:hover {
   padding: 10px 0;
   font-size: 3.2rem;
   width: 100%;
+  margin: 0;
 }
