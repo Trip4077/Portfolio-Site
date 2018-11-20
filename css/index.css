@@ -133,7 +133,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Your Code Goes Here */
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
   color: #E7DFDD;
@@ -143,6 +145,12 @@ html body {
   box-sizing: border-box;
   font-size: 1.6rem;
   line-height: 24px;
+}
+html body h1 {
+  font-size: 6.8rem;
+}
+html body h2 {
+  font-size: 4rem;
 }
 nav {
   position: fixed;
@@ -197,12 +205,6 @@ i:hover {
   justify-content: space-around;
   height: 40%;
 }
-.welcome .welcome__intro h1 {
-  font-size: 6.8rem;
-}
-.welcome .welcome__intro h2 {
-  font-size: 4rem;
-}
 .welcome .welcome__intro .welcome__intro__icons {
   display: flex;
   justify-content: space-between;
@@ -215,4 +217,46 @@ i:hover {
 }
 #youtube {
   width: 65px;
+}
+.projects {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #813772, black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects .projects__container {
+  padding: 50px;
+  width: 60%;
+  height: 90%;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.projects .projects__container div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.projects .projects__container div .projects__container__tile {
+  border: 2px solid #B82601;
+  width: 30%;
+  margin: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 25px;
+  text-align: center;
+  height: 200px;
+}
+.projects .projects__container div .projects__container__tile h2 {
+  background-color: #B82601;
+  padding: 10px 0;
+  font-size: 3.2rem;
+  width: 100%;
 }
