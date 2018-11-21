@@ -155,10 +155,12 @@ html body h1 {
 html body h2 {
   font-size: 4rem;
 }
+/* Main Nav Bar */
 nav {
   position: fixed;
   top: 1.5%;
   left: 2%;
+  /* Link Container */
 }
 nav .nav__link {
   opacity: 1;
@@ -182,6 +184,7 @@ nav .nav__link .active {
 nav .nav__link .active_hover {
   opacity: 1;
 }
+/* Down Arrow */
 i {
   opacity: 0.4;
   border: solid #E7DFDD;
@@ -270,13 +273,10 @@ i:hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.skills .skills__row .skills__row__items img {
+.skills .skills__row .skills__row__items div img {
   height: 125px;
   width: 140px;
-  margin: 0 8px;
-}
-.skills .skills__row .skills__row__items img:nth-child(5) {
-  width: 100px;
+  margin: 20px;
 }
 .skills .skills__row .back-end {
   display: flex;
@@ -293,6 +293,9 @@ i:hover {
   height: 100px;
   align-self: center;
   border-radius: 10px;
+}
+#js {
+  width: 100px;
 }
 .projects {
   width: 100%;
