@@ -340,6 +340,7 @@ i:hover {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 150px;
 }
 .projects .projects__container .projects__box img {
   margin: 0;
@@ -376,6 +377,9 @@ i:hover {
 .projects__buttons button:hover {
   color: #B82601;
   background-color: #E7DFDD;
+}
+.projects__box--reverse {
+  flex-direction: row-reverse;
 }
 .certs {
   width: 100%;
