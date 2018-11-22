@@ -98,3 +98,63 @@
 #js {
   width: 100px;
 }
+
+@media (max-width: 564px) {
+  .skills {
+    .skills__row {
+      .skills__row__category {
+        width: 62%;
+
+      }
+      .skills__row__items {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        div {
+
+          width: 30%;
+          height: 175px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          img {
+            height: 125px;
+            width: 140px;
+            margin: 20px;
+          }
+        }
+      }
+
+      .back-end {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        div {
+          width: 30%;
+          height: 175px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          img {
+            width: 100px;
+          }
+
+          img:first-child {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}

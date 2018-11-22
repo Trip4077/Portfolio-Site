@@ -233,6 +233,15 @@ i:hover {
 #youtube {
   width: 65px;
 }
+@media (max-width: 564px) {
+  .welcome .welcome__intro h1,
+  .welcome .welcome__intro h2 {
+    height: 150px;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+}
 .skills {
   width: 100%;
   height: 100%;
@@ -312,6 +321,51 @@ i:hover {
 }
 #js {
   width: 100px;
+}
+@media (max-width: 564px) {
+  .skills .skills__row .skills__row__category {
+    width: 62%;
+  }
+  .skills .skills__row .skills__row__items {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .skills .skills__row .skills__row__items div {
+    width: 30%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skills .skills__row .skills__row__items div img {
+    height: 125px;
+    width: 140px;
+    margin: 20px;
+  }
+  .skills .skills__row .back-end {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .skills .skills__row .back-end div {
+    width: 30%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skills .skills__row .back-end div img {
+    width: 100px;
+  }
+  .skills .skills__row .back-end div img:first-child {
+    width: 150px;
+  }
 }
 .projects {
   width: 100%;
