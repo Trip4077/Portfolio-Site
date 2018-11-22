@@ -273,6 +273,14 @@ i:hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.skills .skills__row .skills__row__items div {
+  width: 30%;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .skills .skills__row .skills__row__items div img {
   height: 125px;
   width: 140px;
@@ -283,10 +291,18 @@ i:hover {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.skills .skills__row .back-end img {
+.skills .skills__row .back-end div {
+  width: 30%;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills .skills__row .back-end div img {
   width: 100px;
 }
-.skills .skills__row .back-end img:first-child {
+.skills .skills__row .back-end div img:first-child {
   width: 150px;
 }
 #less {
@@ -320,29 +336,46 @@ i:hover {
   margin: 30px 0;
   margin-bottom: 75px;
 }
-.projects .projects__container div {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.projects .projects__container div .projects__container__tile {
-  border: 2px solid #B82601;
-  background-color: rgba(255, 255, 255, 0.15);
-  width: 40%;
-  margin: 12px;
+.projects .projects__container .projects__box {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  padding-bottom: 25px;
-  text-align: center;
-}
-.projects .projects__container div .projects__container__tile h2 {
-  background-color: #B82601;
-  padding: 10px 0;
-  font-size: 2.6rem;
   width: 100%;
+}
+.projects .projects__container .projects__box img {
   margin: 0;
+}
+.projects .projects__container .projects__box .projects__box__content {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects .projects__container .projects__box .projects__box__content h2 {
+  margin: 20px 0;
+}
+.projects__buttons {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.projects__buttons a {
+  width: 100%;
+  margin-left: 12%;
+}
+.projects__buttons button {
+  border: none;
+  height: 30px;
+  width: 75%;
+  margin: 0 auto;
+  cursor: pointer;
+  color: #E7DFDD;
+  background-color: #B82601;
+}
+.projects__buttons button:hover {
+  color: #B82601;
+  background-color: #E7DFDD;
 }
 .certs {
   width: 100%;

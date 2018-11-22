@@ -71,7 +71,12 @@ const skills = {
   less: ["Preprocessor", "Nested Styles", "Mixins", "Variables"],
   bootstrap: ["Bootstrap4 library", "Components"],
   gsap: ["GSAP Library", "JS Animations"],
-  react: ["ReactJS", "Front-end library", "Functional Components"]
+  react: ["ReactJS", "Front-end library", "Functional Components"],
+  java: ["StanfordNLP Library", "Data Manipulation"],
+  python: ["Sentiment Analysis", "PyGame Lib", "SciKit Learn", "Tensorflow"],
+  node: ["Readline", "Server Construction"],
+  git: ["Fork", "Clone", "Commit", "Push", "Merge", "Branch", "Hosting"],
+  unity: ["C# Scripting", "Simulations", "Object Manipulation"]
 }
 
 class SkillBox {
@@ -99,11 +104,11 @@ class SkillBox {
         element.style.color = '#FE3301';
 
         this.element.appendChild(element);
-
+        this.element.style.border = '1px solid #FE3301'
       });
     }
 
-    TweenMax.fromTo(this.element, 1.5, {css: {opacity: 0}}, {css:{opacity: 1}});
+    TweenMax.fromTo(this.element, 1, {css: {opacity: 0}}, {css:{opacity: 1}});
   }
 
   hideText() {
@@ -118,9 +123,17 @@ class SkillBox {
     img.id = this.title;
     this.element.appendChild(img)
 
-    TweenMax.fromTo(this.element, 2.25, {css: {opacity: 0}}, {css:{opacity: 1}});
+    this.element.style.border = 'none'
+
+    TweenMax.fromTo(this.element, 2, {css: {opacity: 0}}, {css:{opacity: 1}});
   }
 }
 
 skillIcons = document.querySelectorAll('.skills__row__items.front-end div')
-                  .forEach(elem => new SkillBox(elem))
+             .forEach(elem => new SkillBox(elem))
+
+skillIcons = document.querySelectorAll('.skills__row__items.back-end div')
+             .forEach(elem => new SkillBox(elem))
+
+skillIcons = document.querySelectorAll('.skills__row__items.misc div')
+             .forEach(elem => new SkillBox(elem))

@@ -25,7 +25,7 @@
         <div class="nav__link">
           <a href="#certificates">Certificates</a>
         </div>
-        <div class="nav__link">
+        <!-- <div class="nav__link">
           <a href="#resume">Resume</a>
         </div>
         <div class="nav__link">
@@ -33,7 +33,7 @@
         </div>
         <div class="nav__link">
           <a href="#about">About Me</a>
-        </div>
+        </div> -->
       </nav>
 
       <!-- *****************Welcome Section*****************  -->
@@ -73,19 +73,19 @@
         </div>
 
         <div class="skills__row">
-          <div class="skills__row__category back-end"><h3>Back End</h3></div>
+          <div class="skills__row__category"><h3>Back End</h3></div>
           <div class="skills__row__items back-end">
-            <img src="./img/java-logo.png" alt="Java Logo">
-            <img src="./img/python-logo.png" alt="Python Logo">
-            <img src="./img/node-logo.png" alt="NodeJS logo">
+            <div data-tab="java" data-path="./img/java-logo.png"><img src="./img/java-logo.png" alt="Java Logo"></div>
+            <div data-tab="python" data-path="./img/python-logo.png"><img src="./img/python-logo.png" alt="Python Logo"></div>
+            <div data-tab="node" data-path="./img/node-logo.png"><img src="./img/node-logo.png" alt="NodeJS logo"></div>
           </div>
         </div>
 
         <div class="skills__row">
           <div class="skills__row__category"><h3>Misc.</h3></div>
-          <div class="skills__row__items">
-            <img src="./img/git-logo.png" alt="Git Logo">
-            <img src="./img/unity-logo.png" alt="Unity Logo">
+          <div class="skills__row__items misc">
+            <div data-tab="git" data-path="./img/git-logo.png"><img src="./img/git-logo.png" alt="Git Logo"></div>
+            <div data-tab="unity" data-path="./img/unity-logo.png"><img src="./img/unity-logo.png" alt="Unity Logo"></div>
           </div>
         </div>
       </section>
@@ -96,37 +96,14 @@
         <div class="projects__container">
           <h1>Projects</h1>
 
-          <div>
-            <div class="projects__container__tile">
-              <h2>Lambda</h2>
-              <p>A Great Idea!</p>
-              <p>Newsfeed Components</p>
-              <p>S&J Architecture</p>
-            </div>
-
-            <div class="projects__container__tile">
-              <h2>Personal</h2>
-              <p>Lyric Manipulation</p>
-              <p>You Matter</p>
-            </div>
-
-            <div class="projects__container__tile">
-              <h2>Practice</h2>
-              <p>Responsive Navbar</p>
-              <p>NodeJS Pokemon Battle</p>
-            </div>
-
-            <div class="projects__container__tile">
-              <h2>Course Projects</h2>
-              <p>Weather App</p>
-              <p>Roller Madness</p>
-
-            </div>
-
-            <div class="projects__container__tile">
-              <h2>Free Code Camp</h2>
-              <p>Product Landing Page</p>
-              <p>Technical Documentation</p>
+          <div class="projects__box">
+            <img src="./img/SJ-mockup.png" height="300" width="550" alt="S&J Architects Mockup">
+            <div class="projects__box__content">
+              <h2>S&amp;J Architects</h2>
+              <div class="projects__buttons">
+                <a href="https://github.com/Trip4077/User-Interface-Project-Week" target="_blank"> <button>CODE</button> </a>
+                <a href="https://trip4077.github.io/User-Interface-Project-Week/index.html" target="_blank"> <button>SITE</button> </a>
+              </div>
             </div>
           </div>
 

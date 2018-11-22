@@ -26,34 +26,55 @@
       margin-bottom: 75px;
     }
 
-    div {
+    .projects__box {
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      justify-content: space-between;
 
       width: 100%;
 
-      .projects__container__tile {
-        border: 2px solid #B82601;
-        background-color: rgba(255, 255, 255, 0.15);
-        width: 40%;
-        margin: 12px;
+      img {
+        margin: 0;
+      }
 
+      .projects__box__content {
+        margin: 0;
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
-        padding-bottom: 25px;
-
-        text-align: center;
+        align-items: center;
+        justify-content: center;
 
         h2 {
-          background-color: #B82601;
-          padding: 10px 0;
-          font-size: 2.6rem;
-          width: 100%;
-          margin: 0;
+          margin: 20px 0;
         }
       }
+    }
+  }
+}
+
+.projects__buttons {
+  margin: 10px 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    width: 100%;
+    margin-left: 12%;
+  }
+
+  button {
+    border: none;
+    height: 30px;
+    width: 75%;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #E7DFDD;
+    background-color: #B82601;
+
+    &:hover {
+      color: #B82601;
+      background-color: #E7DFDD;
     }
   }
 }
