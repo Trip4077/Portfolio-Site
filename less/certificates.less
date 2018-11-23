@@ -48,3 +48,40 @@
 .certs__columns__left, .certs__columns__right {
   margin: 0 25px;
 }
+
+@media (max-width: 564px) {
+  .certs {
+    .certs__columns {
+      flex-direction: column-reverse;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .certs__column__tile {
+
+    h3 { 
+      font-size: 2.6rem;
+      background-color: #B82601;
+      padding: 10px;
+      width: 100%;
+    }
+
+    img {
+      height: 150px;
+      width: 300px;
+      margin: 0 10px;
+      margin-top: 25px;
+    }
+
+    img:last-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  .certs__columns__left, .certs__columns__right {
+    margin: 0;
+  }
+}
