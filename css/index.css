@@ -447,7 +447,7 @@ i:hover {
     flex-direction: column;
     line-height: 60px;
   }
-  .projects .projects__container .projects__box img {
+  .projects .projects__container .projects__box .projects__box__demo {
     height: 150px;
     width: 250px;
     margin-right: 75px;
@@ -456,7 +456,7 @@ i:hover {
 .certs {
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding-top: 100px;
   background-image: linear-gradient(to top right, #062F4F, #121212);
   display: flex;
   flex-direction: column;
