@@ -7,6 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
 
@@ -38,7 +39,7 @@
 
       <!-- *****************Welcome Section*****************  -->
       <section class="welcome" id="welcome">
-        <div class="welcome__intro">
+        <div class="welcome__intro"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">
           <h1>Bernard Johnson</h1>
           <h2>Front-End Developer</h2>
 
@@ -59,7 +60,7 @@
           <h1>Skills</h1>
         </div>
 
-        <div class="skills__row">
+        <div class="skills__row" data-aos="flip-down" data-aos-duration="700">
           <div class="skills__row__category"><h3>Front End</h3></div>
           <div class="skills__row__items front-end">
             <div data-tab="html" data-path="./img/html-logo.png"><img src="./img/html-logo.png" alt="HTML5 Logo"></div>
@@ -72,7 +73,7 @@
           </div>
         </div>
 
-        <div class="skills__row">
+        <div class="skills__row" data-aos="flip-down" data-aos-duration="700">
           <div class="skills__row__category"><h3>Back End</h3></div>
           <div class="skills__row__items back-end">
             <div data-tab="java" data-path="./img/java-logo.png"><img src="./img/java-logo.png" alt="Java Logo"></div>
@@ -81,7 +82,7 @@
           </div>
         </div>
 
-        <div class="skills__row">
+        <div class="skills__row" data-aos="flip-down" data-aos-duration="700">
           <div class="skills__row__category"><h3>Misc.</h3></div>
           <div class="skills__row__items misc">
             <div data-tab="git" data-path="./img/git-logo.png"><img src="./img/git-logo.png" alt="Git Logo"></div>
@@ -189,8 +190,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  	<script>
+  		AOS.init();
+  	</script>
   </body>
 </html>
