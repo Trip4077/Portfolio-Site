@@ -74,7 +74,7 @@ const skills = {
   react: ["ReactJS", "Front-end library", "Functional Components"],
   java: ["StanfordNLP Library", "Data Manipulation"],
   python: ["Sentiment Analysis", "PyGame Lib", "SciKit Learn", "Tensorflow"],
-  node: ["Readline", "Server Construction"],
+  node: ["Readline", "NPM"],
   git: ["Fork", "Clone", "Commit", "Push", "Merge", "Branch", "Hosting"],
   unity: ["C# Scripting", "Simulations", "Object Manipulation"]
 }
